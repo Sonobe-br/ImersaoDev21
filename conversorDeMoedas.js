@@ -1,13 +1,15 @@
 function Converter() {
     var valorElemento = document.getElementById('valor');
     var valor = valorElemento.value;
-    var valorEmDolarNumerico = parseFloat(valor); 
+    var valorEmDolarNumerico = parseInt(valor); 
     //console.log(valorEmDolarNumerico);
     
-    var valorEmReal = valorEmDolarNumerico * 5.24; 
-    console.log(valorEmReal);
+    //conversão de valores em dólar para real
+    var valorEmDolar = valorEmDolarNumerico.toFixed(2) / 5.24; /* Cotação do dia 14 de setembro 2021 */
+    console.log(valorEmDolar);
 
     var elementoValorConvertido = document.getElementById('valorConvertido');
-    var valorConvertido = 'O resultado em real é R$' + valorEmReal;
+    var valorConvertido = 'O resultado em real é R$' + valorEmDolar;
     elementoValorConvertido.innerHTML = valorConvertido;   
 }
+

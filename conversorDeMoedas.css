@@ -17,19 +17,29 @@ body {
 .page-title {
     color: #ffffff;
     margin: 0 0 5px;
+    font-size: 2.5em;
 }
   
 .page-subtitle {
     color: #ffffff;
-    margin-top: 5px;
+    margin-top: 1px;
+    margin-bottom: 8px;
+    font-size: 0.3em;
 }
-  
+
+.real {
+    color: #ffffff;
+    margin-top: 4px;
+    font-size: 0.9em;
+}
+
 .page-logo {
-    width: 200px;
+    width: 250px;
+    margin-top: 25px;
 }
   
 .alura-logo {
-    width: 40px;
+    width: 50px;
     position: absolute;
     top: 10px;
     right: 15px;
@@ -38,25 +48,31 @@ body {
 .im-logo {
     width: 40px;
     position: absolute;
-    top: 35px;
-    right: 12px;
+    top: 40px;
+    right: 18px;
 }
   
 input {
-    margin: 12px;
-    padding: 6px;
+    margin-top: 2px;
+    padding: 9px;
     border-radius: 5px;
 }
   
 label {
     color: white;
+    font-size: 0.3em;
+    margin-top: 150px;
+
 }
   
 button {
     margin-top: 12px;
     padding: 4px 8px;
     border-radius: 10px;
-    background: #ffffff;
+    background: #f0b208;
+    color: rgb(206, 150, 9)
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); 
 }
   
 h2 {
