@@ -8,9 +8,10 @@ function Chutar(){
     if (tentativa == numeroSecreto){
         elementoResultado.innerHTML = 'Yeah! You win!';
     } else if(tentativa > 10 || tentativa < 0){
-        elementoResultado.innerHTML = 'Você deve digitar números de 0 a 10';
+        elementoResultado.innerHTML = 'You must enter numbers from 0 to 10';
     }else{
-        elementoResultado.innerHTML = 'Errou, o número secreto era ' + numeroSecreto;
+        elementoResultado.innerHTML = 'You missed the secret number';
+        /* elementoResultado.innerHTML = 'Errou, o número secreto era ' + numeroSecreto; */
     }   
 }
 
