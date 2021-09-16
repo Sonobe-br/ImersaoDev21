@@ -26,22 +26,51 @@
             var valorConvertido = 'O resultado em real é R$' + valorEmDolar;
             elementoValorConvertido.innerHTML = valorConvertido;  
             }
+
+            function ConverterReal() {
+            var valorElemento = document.getElementById('valor');
+            var valor = valorElemento.value;
+            var valorEmRealNumerico = parseInt(valor); 
+            //console.log(valorEmRealNumerico);
+
+            //conversão de valores em dólar para real
+            var valorEmReal = valorEmRealNumerico.toFixed(2) / 5.24; /* Cotação do dia 14 de setembro 2021 */
+            console.log(valorEmReal);
+
+            var elementoValorConvertido = document.getElementById('valorConvertido');
+            var valorConvertido = 'O resultado em dólar é R$' + valorEmReal;
+            elementoValorConvertido.innerHTML = valorConvertido; 
+            }
         </script>
         
-        <div class="container">
-            <h1 class="page-title"> 
+        <div class="container1">
+            <h1 class="page-title1"> 
             Currency Converter
             
-            <p class="page-subtitle">
-                find out the value in U$ dollar
+            <p class="page-subtitle1">
+            find out the value in dollar
             </p>
 
             <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-conversor-de-moedas.svg" class="page-logo" alt=""><br><br>
-            <label for="moeda">Enter the Value in Dollar</label><br>   
+            <label for="moeda">Enter the Value in Dollar US$</label><br>   
             <input type="number" id="valor" size="2" /><br>
             <button type="submit" onclick="Converter()">to Convert</button>
             <h2 id="valorConvertido"></h2>
         </div>
+
+        <div class="container2">
+            <p class="page-subtitle2">
+            Enter the Value in Real R$
+            </p>           
+           
+            <!-- <label for="moeda">Enter the Value in Real</label><br> -->   
+            <input type="number" id="valor" size="2" /><br>
+            <button type="submit" onclick="Converter()">to Convert</button>
+            <h2 id="valorConvertido"></h2>
+        </div>
+
+
+
         <a href="https://alura.com.br/" target="_blank">
         <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
         <img src="./logo-ironmantri.jpg" alt="" class="im-logo"> 

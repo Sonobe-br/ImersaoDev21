@@ -13,3 +13,17 @@ function Converter() {
     elementoValorConvertido.innerHTML = valorConvertido;   
 }
 
+function ConverterReal() {
+    var valorElemento = document.getElementById('valor');
+    var valor = valorElemento.value;
+    var valorEmRealNumerico = parseInt(valor); 
+    //console.log(valorEmRealNumerico);
+    
+    //conversão de valores em dólar para real
+    var valorEmReal = valorEmRealNumerico.toFixed(2) / 5.24; /* Cotação do dia 14 de setembro 2021 */
+    console.log(valorEmReal);
+
+    var elementoValorConvertido = document.getElementById('valorConvertido');
+    var valorConvertido = 'O resultado em dólar é R$' + valorEmReal;
+    elementoValorConvertido.innerHTML = valorConvertido;   
+}
