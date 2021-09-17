@@ -10,7 +10,10 @@ body {
   
 .container {
     text-align: center;
+    padding: 1em;
+    color: #ffffff;
     padding: 20px;
+    
 }
   
 .page-title {
@@ -22,7 +25,7 @@ body {
     color: #ffffff;
     margin-top: 5px;
 }
-  
+ 
 .page-logo {
     width: 200px;
 }
@@ -43,7 +46,31 @@ img {
 }
 
 p {
-    text-align: center;
-    font-size: 42px;
+    font-size: small;
+    color: #ffffff;
+}
+
+input {
+    color: black;
+    margin-top: 15px;
+    padding: 9px;
+    border-radius: 5px;
+}
+
+button {
+    margin-top: 2px;
+    padding: 4px 8px;
+    border-radius: 5px;
+    background: #f0b208;
+    color: rgb(206, 150, 9)
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5); 
+}
+
+.im-logo {
+    width: 40px;
+    position: absolute;
+    top: 40px;
+    right: 12px;
 }
   
