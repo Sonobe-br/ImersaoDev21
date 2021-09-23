@@ -45,45 +45,44 @@ function sortearCarta(){
     cartaJogador = cartas[numeroCartaJogador];
     console.log(cartaJogador);
     
-    document.getElementById("btnSortear").disable = true;
-    document.getElementById("btnJogar").disable = false;
+    document.getElementById("btnSortear").disabled = true;
+    document.getElementById("btnJogar").disabled = false;
 
     exibirOpcoes()
 
 }
 
 function exibirOpcoes(){
-    let opcoes = documemt.getElementById("opcoes");
-    let opcoesTexto = ""
+    let opcoes = document.getElementById("opcoes");
+    let opcoesTexto = "";
 
     for (let atributo in cartaJogador.atributos){
-        //console.log(atributos)
-        opcoesTexto = "<input type='radio' name='atributo' value=' + atributo + '>" + atributo; 
+        //console.log(atributo);
+        opcoesTexto += "<input type='radio' name='atributo' value='" + atributo + "'>" + atributo; 
     }
     opcoes.innerHTML = opcoesTexto;  
 }
 
 function obtemAtributoSelecionado(){
-    let radioAtributos = document.getElementByName("atributo"); 
+    let radioAtributos = document.getElementsByName("atributo"); 
     for (let i = 0; i < radioAtributos.length; i++){
         if (radioAtributos[i].checked == true){
-            return radioAtributos[i].value; 
+        return radioAtributos[i].value; 
         }
     }
-
 }
 
 function jogar(){
     let atributoSelecionado = obtemAtributoSelecionado()
     //console.log(atributoSelecionado); 
     //console.log (cartaJogador.atributos[atributoSelecionado]);
-    let elementoResultado = document.getElementById("Resultado")
+    let elementoResultado = document.getElementById("resultado");
 
-    let valorCartaJogador = cartaJogador.atributos[atributoSelecionado] 
-    let valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado]
+    let valorCartaJogador = cartaJogador.atributos[atributoSelecionado]; 
+    let valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
 
     if(valorCartaJogador > valorCartaMaquina){
-        elementoResultado.innerHTML = "Você Venceu";
+        elementoResultado.innerHTML = "Você venceu!";
     } else if (valorCartaMaquina > valorCartaJogador){
         elementoResultado.innerHTML = "Você perdeu, a carta da máquina é maior";
     } else {
@@ -91,4 +90,3 @@ function jogar(){
     }
 console.log(cartaMaquina)
 }
-
