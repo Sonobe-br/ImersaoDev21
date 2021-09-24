@@ -77,9 +77,8 @@ function jogar(){
     //console.log(atributoSelecionado); 
     //console.log (cartaJogador.atributos[atributoSelecionado]);
     let elementoResultado = document.getElementById("resultado");
-
     let valorCartaJogador = cartaJogador.atributos[atributoSelecionado]; 
-    let valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];
+    let valorCartaMaquina = cartaMaquina.atributos[atributoSelecionado];    
 
     if(valorCartaJogador > valorCartaMaquina){
         elementoResultado.innerHTML = "Você venceu!";

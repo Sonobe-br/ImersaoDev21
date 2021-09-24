@@ -69,3 +69,8 @@ h2 {
 .opcoes {
     color: white;
 }
+
+#resultado {
+    font-family: "Roboto Mono", monospace;
+    color: white;
+}
