@@ -47,7 +47,7 @@ let carta5 = {
     imagem: "https://br.web.img2.acsta.net/newsv7/21/04/15/16/04/1040914.jpg",
     atributos: {
         ataque: 25,
-        desefa: 7,
+        defesa: 7,
         magia: 15 
     }
 };
@@ -150,7 +150,7 @@ function jogar(){
 
     if(cartaJogador.atributos[atributoSelecionado] > cartaMaquina.atributos[atributoSelecionado]){
         htmlResultado = "<p class = 'resultado-final'>You Win</p>";
-    } else if (cartaJogador.atributos[atributoSelecionado] < cartaMaquina.atributos[atributoSelecionado]){
+    } else if(cartaJogador.atributos[atributoSelecionado] < cartaMaquina.atributos[atributoSelecionado]){
         htmlResultado = "<p class = 'resultado-final'>You Loose</p>";
     } else {
         htmlResultado = "<p class = 'resultado-final'>Draw</p>";
