@@ -31,18 +31,99 @@ let carta3 = {
     } 
 };
 
-let cartas = [carta1,carta2,carta3];
+let carta4 = {
+    nome: "Pikachu Shiny",
+    imagem:"https://newesc.com/wp-content/uploads/pikachu-shiny-585x600.jpg",
+    atributos: {
+        ataque: 20,
+        defesa: 7,
+        magia: 3
+
+    } 
+};
+
+let carta5 = {
+    nome: "Wolverine",
+    imagem: "https://br.web.img2.acsta.net/newsv7/21/04/15/16/04/1040914.jpg",
+    atributos: {
+        ataque: 25,
+        desefa: 7,
+        magia: 15 
+    }
+};
+
+let carta6 = {
+    nome:"Ryu",
+    imagem:"https://images.nintendolife.com/6b8f4d29a3700/davidoff-ryu.original.jpg",
+    atributos: {
+        ataque: 31,
+        defesa: 13,
+        magia: 20
+    }
+}
+
+let carta7 = {
+    nome: "Lunala",
+    imagem:"https://pm1.narvii.com/6683/f6e7b2cc733a649ea3b55d2466605eec2a66924e_hq.jpg",
+    atributos: {
+        ataque: 40,
+        defesa: 10,
+        magia: 21
+    }
+}
+
+let carta8 = {
+    nome: "Thanos",
+    imagem: "https://i.pinimg.com/236x/b0/e3/2f/b0e32fba5221e0e012a9f8e9d060fae5.jpg",
+    atributos: {
+        ataque: 130,
+        defesa: 110,
+        magia: 500
+    }
+}
+
+let carta9 = {
+    nome: "IRONMAN",
+    imagem: "https://1.bp.blogspot.com/-JpO9__qRzfc/Vl8grNdL38I/AAAAAAAAEKk/yV2vWEVi82Y/s640/ironmanextremis.jpg",
+    atributos: {
+        ataque: 180,
+        defesa: 103,
+        magia: 498
+    }
+}
+
+let carta10 = {
+    nome: "VENOM",
+    imagem: "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/02/footage-of-tom-hardy-on-the-venom-set-gives-away-some-plot-details.jpg",
+    atributos: {
+        ataque: 172,
+        defesa: 98,
+        magia: 100
+    }
+}
+
+let carta11 = {
+    nome: "Spider Man",
+    imagem: "https://justicageek.com.br/wp-content/uploads/2017/07/Spider-Man-Marvel-Comics-Peter-Parker-h0011.jpg",
+    atributos: {
+        ataque: 272,
+        defesa: 198,
+        magia: 100
+    }
+}
+
+let cartas = [carta1,carta2,carta3, carta4, carta5, carta6, carta7, carta8, carta9, carta10, carta11];
 let cartaMaquina;
 let cartaJogador;
 
 function sortearCarta(){
-    let numeroCartaMaquina = parseInt(Math.random() * 3);
+    let numeroCartaMaquina = parseInt(Math.random() * 11);
     cartaMaquina = cartas[numeroCartaMaquina];
     console.log(cartaMaquina);
 
-    let numeroCartaJogador = parseInt(Math.random() * 3);
+    let numeroCartaJogador = parseInt(Math.random() * 11);
     while(numeroCartaMaquina == numeroCartaJogador){
-        numeroCartaJogador = parseInt(Math.random() * 3);
+        numeroCartaJogador = parseInt(Math.random() * 11);
     }
 
     cartaJogador = cartas[numeroCartaJogador];
