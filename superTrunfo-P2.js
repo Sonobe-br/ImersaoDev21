@@ -46,9 +46,9 @@ let carta5 = {
     nome: "Wolverine",
     imagem: "https://br.web.img2.acsta.net/newsv7/21/04/15/16/04/1040914.jpg",
     atributos: {
-        ataque: 25,
-        defesa: 7,
-        magia: 15 
+        ataque: 125,
+        defesa: 107,
+        magia: 100 
     }
 };
 
@@ -76,7 +76,7 @@ let carta8 = {
     nome: "Thanos",
     imagem: "https://i.pinimg.com/236x/b0/e3/2f/b0e32fba5221e0e012a9f8e9d060fae5.jpg",
     atributos: {
-        ataque: 130,
+        ataque: 230,
         defesa: 110,
         magia: 500
     }
@@ -86,7 +86,7 @@ let carta9 = {
     nome: "IRONMAN",
     imagem: "https://1.bp.blogspot.com/-JpO9__qRzfc/Vl8grNdL38I/AAAAAAAAEKk/yV2vWEVi82Y/s640/ironmanextremis.jpg",
     atributos: {
-        ataque: 180,
+        ataque: 232,
         defesa: 103,
         magia: 498
     }
@@ -96,8 +96,8 @@ let carta10 = {
     nome: "VENOM",
     imagem: "https://observatoriodocinema.uol.com.br/wp-content/uploads/2019/02/footage-of-tom-hardy-on-the-venom-set-gives-away-some-plot-details.jpg",
     atributos: {
-        ataque: 172,
-        defesa: 98,
+        ataque: 252,
+        defesa: 198,
         magia: 100
     }
 }
@@ -107,7 +107,7 @@ let carta11 = {
     imagem: "https://justicageek.com.br/wp-content/uploads/2017/07/Spider-Man-Marvel-Comics-Peter-Parker-h0011.jpg",
     atributos: {
         ataque: 272,
-        defesa: 198,
+        defesa: 201,
         magia: 100
     }
 }
