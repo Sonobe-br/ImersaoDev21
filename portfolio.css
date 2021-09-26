@@ -19,23 +19,52 @@ body{
     border-radius: 15px;
     box-shadow: 3px 3px 3px #0E1D2F;
     padding: 60px;
-
 }
 
 .logo-js{
-    border-radius: 10px;
-    max-height: 35px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 500px;
-   
+    position: relative;
+    left: 600px;
+    top: -70%;
+    height: 30px;
+    border-radius: 5px;
+    box-shadow: 1px 2px 1px #0E1D2F
 }
 
 .logo-html{
+    position: relative;
+    left: 600px;
+    top: -67%;
+    height: 35px;
     border-radius: 5px;
-    max-height: 35px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    margin-left: 500px;
+    /* mix-blend-mode: multiply; */ /* é capaz de remover o fundo branco da imagem */
+}
 
+.logo-css{
+    position: relative;
+    left: 600px;
+    top: -67%;
+    height: 35px;
+    border-radius: 5px;
+    /* mix-blend-mode: multiply; */
+}
+
+.logo-python{
+    position: relative;
+    left: 600px;
+    top: -67%;
+    height: 35px;
+    border-radius: 5px;
+    /* display: block; */
+}
+
+.logo-github{
+    position: relative;
+    left: 600px;
+    top: -67%;
+    height: 35px;
+    border-radius: 5px;
+    /* mix-blend-mode: multiply; */
+    
 }
 
 .perfil{
@@ -66,15 +95,51 @@ body{
 .projetos{
     font-weight: 400;
     font-size: 15px;
-    color: #1C1C1C;;
+    color: #1C1C1C;
     display: flex;
     flex-direction: column;
     width: auto;
     max-height: min-content;
-    font-family: 'Courier New', Courier, monospace;   
+    font-family: 'Courier New', Courier, monospace;  
+    list-style-type: none; /* remove as bolinhas dos links */
 }
 
 .listas{
     height: 10px;
+}
 
+.lista-logos{
+    position: relative;
+    left: 550px;
+    top: -86%;
+    height: 30px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #1C1C1C;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+a:link{
+    color: green;
+    text-decoration: none;
+}
+
+a:visited{
+    color:  #1C1C1C;
+    text-decoration: none;
+}
+
+a:hover{ /* efeito de troca de cores no momento que o cursor passa sob o link */
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:active{
+    color: yellow;
+    text-decoration: none;
+}
+
+a{
+    margin-left: 39px;
 }
