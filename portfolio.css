@@ -12,64 +12,13 @@ body{
     padding: 64px;
 }
 
-.quadro-central{
-    background: #3468A7;
-    margin: 50px;
-    height: 160px;
-    border-radius: 15px;
-    box-shadow: 3px 3px 3px #0E1D2F;
-    padding: 60px;
-}
-
-.logo-js{
-    position: relative;
-    left: 600px;
-    top: -70%;
-    height: 30px;
-    border-radius: 5px;
-    box-shadow: 1px 2px 1px #0E1D2F
-}
-
-.logo-html{
-    position: relative;
-    left: 600px;
-    top: -67%;
-    height: 35px;
-    border-radius: 5px;
-    /* mix-blend-mode: multiply; */ /* é capaz de remover o fundo branco da imagem */
-}
-
-.logo-css{
-    position: relative;
-    left: 600px;
-    top: -67%;
-    height: 35px;
-    border-radius: 5px;
-    /* mix-blend-mode: multiply; */
-}
-
-.logo-python{
-    position: relative;
-    left: 600px;
-    top: -67%;
-    height: 35px;
-    border-radius: 5px;
-    /* display: block; */
-}
-
-.logo-github{
-    position: relative;
-    left: 600px;
-    top: -67%;
-    height: 35px;
-    border-radius: 5px;
-    /* mix-blend-mode: multiply; */
-    
-}
-
 .perfil{
     display: flex;
-    align-items: center;
+    justify-content: space-between;
+}
+
+.altera-tema{
+    display: flex;
 }
 
 .perfil-foto{
@@ -80,6 +29,8 @@ body{
 
 .titulo{
     margin-left: 16px;
+    position: relative;
+    top: 120px;
 }
 
 .titulo h1{
@@ -87,47 +38,51 @@ body{
     font-size: 36px;
 }
 
-.titulo h3{
-    font-weight: 400;
+.titulo h2{
     font-size: 24px;
+    font-weight: 400;
+}
+
+.tema button{
+    border-radius: 80px;
+    align-self: flex-end;
+    font-size: 17px;
+    font-weight: 400;
+    padding: 8px 16px;
+    background: #ECF4FF
 }
 
 .projetos{
-    font-weight: 400;
-    font-size: 15px;
-    color: #1C1C1C;
     display: flex;
     flex-direction: column;
-    width: auto;
-    max-height: min-content;
-    font-family: 'Courier New', Courier, monospace;  
-    list-style-type: none; /* remove as bolinhas dos links */
+    background: linear-gradient(236.85deg, #041832 27.30%, #3468A7 96.03%);
+    margin-top: 32px;
+    padding: 32px;   
+    border-radius: 25px;
+    box-shadow: 2px 2px 4px rgba(16 16 16 0.42);
 }
 
-.listas{
-    height: 10px;
+.projeto-titulo{
+    font-weight: 700;
+    font-size: 30px; 
 }
 
-.lista-logos{
-    position: relative;
-    left: 550px;
-    top: -86%;
-    height: 30px;
+.projetos-item{
+    margin-left: 39px;
     font-weight: 400;
-    font-size: 15px;
-    color: #1C1C1C;
-    font-family: 'Courier New', Courier, monospace;
-
+    font-size: 20px; 
+    list-style-type: none; /* remove as bolinhas dos links */
+    line-height: 40px; /* altura das linhas */
 }
 
-a:link{
+.projetos-item a{
+    left: 400px;
     color: green;
     text-decoration: none;
-}
-
-a:visited{
+    /* remove os sublinhados do hiper-link */
     color:  #1C1C1C;
     text-decoration: none;
+    /* ajusta a cor da fonte */
 }
 
 a:hover{ /* efeito de troca de cores no momento que o cursor passa sob o link */
@@ -135,11 +90,44 @@ a:hover{ /* efeito de troca de cores no momento que o cursor passa sob o link */
     text-decoration: none;
 }
 
-a:active{
-    color: yellow;
-    text-decoration: none;
+.mackenzie{
+    max-width: 36px;
+    max-height: 36px;
+    position: relative;
+    left: 450px;
+    top: -510px;
 }
 
-a{
-    margin-left: 39px;
+.alura{
+    max-width: 32px;
+    max-height: 32px;
+    position: relative;
+    left: 493px;
+    top: -549px;
 }
+
+.javascript{
+    max-width: 32px;
+    max-height: 32px;
+    position: relative;
+    left: 493px;
+    top: -549px;
+    mix-blend-mode: multiply;
+}
+
+.html{
+    max-width: 43px;
+    max-height: 43px;
+    position: relative;
+    left: 525px;
+    top: -587px;
+    mix-blend-mode: multiply;
+
+}
+
+
+
+
+
+
+
