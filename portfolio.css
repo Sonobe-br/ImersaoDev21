@@ -5,19 +5,19 @@ body{
 
 .container{
     background: #ECF4FF;
-    color: #1C1C1C;
+    color: #5a5656;
     margin: 64px;
     border-radius: 20px;
     box-shadow: 6px 6px 6px #0E1D2F;
     padding: 64px;
 }
 
-.perfil{
+.altera-tema{
     display: flex;
     justify-content: space-between;
 }
 
-.altera-tema{
+.perfil{
     display: flex;
 }
 
@@ -34,22 +34,28 @@ body{
 }
 
 .titulo h1{
+    position:relative;
+    top: 15px;
     font-weight: 700;
     font-size: 36px;
 }
 
 .titulo h2{
-    font-size: 24px;
+    position: relative;
+    top: 0px;
+    font-size: 19px;
     font-weight: 400;
 }
 
 .tema button{
     border-radius: 80px;
     align-self: flex-end;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 400;
-    padding: 8px 16px;
+    padding: 8px 32px;
     background: #ECF4FF
+    outline: 2px solid darkorchid;
+    outline-offset: 2px;
 }
 
 .projetos{
@@ -63,8 +69,11 @@ body{
 }
 
 .projeto-titulo{
+    position: relative;
+    right: 18px;
     font-weight: 700;
-    font-size: 30px; 
+    font-size: 30px;
+    /* color:  #929090;  */
 }
 
 .projetos-item{
@@ -80,7 +89,7 @@ body{
     color: green;
     text-decoration: none;
     /* remove os sublinhados do hiper-link */
-    color:  #1C1C1C;
+    color:  #929090;
     text-decoration: none;
     /* ajusta a cor da fonte */
 }
@@ -91,27 +100,27 @@ a:hover{ /* efeito de troca de cores no momento que o cursor passa sob o link */
 }
 
 .mackenzie{
-    max-width: 36px;
-    max-height: 36px;
+    max-width: 30px;
+    max-height: 30px;
     position: relative;
     left: 450px;
-    top: -510px;
+    top: -1055px;
 }
 
 .alura{
-    max-width: 32px;
-    max-height: 32px;
+    max-width: 29px;
+    max-height: 29px;
     position: relative;
-    left: 493px;
-    top: -549px;
+    left: 450px;
+    top: -4740px;
 }
 
 .javascript{
-    max-width: 32px;
-    max-height: 32px;
+    max-width: 29px;
+    max-height: 29px;
     position: relative;
     left: 493px;
-    top: -549px;
+    top: -1125px;
     mix-blend-mode: multiply;
 }
 
@@ -125,9 +134,34 @@ a:hover{ /* efeito de troca de cores no momento que o cursor passa sob o link */
 
 }
 
+.dark{
+    background: linear-gradient(236.85deg, #375B86 27.26%, #6B87A9 96.03%);
+}
 
+.dark .container{
+    background: #18181b;
+    color: #f6f6f6; 
+}
 
+/* .dark .projetos{
+    color:#1C1C1C;
+} */
 
+.dark .tema button{
+    background: #1C1C1C;
+    color:#ffffff;
+    border: 2px solid #f7f7f7;
+}
 
+.gitHub{
+    position: relative;
+    background-image: url("./logo-github1.png");
+    mix-blend-mode: multiply;
+    max-width: 15%;
+    max-width: 15%;
+    top: -4550px;
+    left: 850px;
+
+}
 
 
