@@ -1,36 +1,36 @@
-let Daniel = {nome: 'Daniel', vitorias: 3, empates: 4, derrotas: 1, pontos: 0}
-let Pedro = {nome: 'Pedro', vitorias: 5, empates: 4, derrotas: 2, pontos: 0}
-let Anita = {nome: 'Anita', vitorias: 4, empates: 3, derrotas: 6, pontos: 0}
-let Bruna = {nome: 'Bruna', vitorias: 2, empates: 3, derrotas: 4, pontos: 0}
+let Vikings = {name: 'MINESSOTA VIKINGS', victories: 3, draws: 4, defeats: 1, scores: 0}
+let Browns = {name: 'BROWNS', victories: 5, draws: 4, defeats: 2, scores: 0}
+let Bears = {name: 'BEARS', victories: 4, draws: 3, defeats: 6, scores: 0}
+let Titans = {name: 'TITANS', victories: 2, draws: 3, defeats: 4, scores: 0}
 
-Daniel.pontos = calculaPontos(Daniel);
-Pedro.pontos = calculaPontos(Pedro);
-Anita.pontos = calculaPontos(Anita);
-Bruna.pontos = calculaPontos(Bruna);
+Vikings.scores = calculaPontos(Vikings);
+Browns.scores = calculaPontos(Browns);
+Bears.scores = calculaPontos(Bears);
+Titans.scores = calculaPontos(Titans);
 
 function calculaPontos(jogador){
-    let contaPontos = jogador.vitorias * 3 + jogador.empates;
+    let contaPontos = jogador.victories * 3 + jogador.draws;
     return contaPontos;
 }
-console.log(Daniel);
-console.log(Pedro);
-console.log(Anita);
-console.log(Bruna);
+console.log(Vikings);
+console.log(Browns);
+console.log(Bears);
+console.log(Titans);
 
-let gamers = [Daniel, Pedro, Anita, Bruna];
+let gamers = [Vikings, Browns, Bears, Titans];
 console.log(gamers);
 
 function exibeJogadoresNaTela(gamers){
     let elemento = ""
     for (let i = 0; i < gamers.length; i++){
-        elemento += "<tr><td>"+ gamers[i].nome +"</td>"
-        elemento += "<td>"+ gamers[i].vitorias +"</td>"
-        elemento += "<td>"+ gamers[i].empates +"</td>"
-        elemento += "<td>"+ gamers[i].derrotas +"</td>"
-        elemento += "<td>"+ gamers[i].pontos +"</td>"
-        elemento += "<td><button onClick='adicionarVitoria("+ i +")'>Vitória</button></td>"
-        elemento += "<td><button onClick='adicionarEmpate("+ i +")'>Empate</button></td>"
-        elemento += "<td><button onClick='adicionarDerrota("+ i +")'>Derrota</button></td>"
+        elemento += "<tr><td>"+ gamers[i].name +"</td>"
+        elemento += "<td>"+ gamers[i].victories +"</td>"
+        elemento += "<td>"+ gamers[i].draws +"</td>"
+        elemento += "<td>"+ gamers[i].defeats +"</td>"
+        elemento += "<td>"+ gamers[i].scores +"</td>"
+        elemento += "<td><button onClick='adicionarVitoria("+ i +")'>Victories</button></td>"
+        elemento += "<td><button onClick='adicionarEmpate("+ i +")'>Draws</button></td>"
+        elemento += "<td><button onClick='adicionarDerrota("+ i +")'>Defeats</button></td>"
         elemento += "</tr>"
     }
 
@@ -41,22 +41,22 @@ function exibeJogadoresNaTela(gamers){
 exibeJogadoresNaTela(gamers);
 
 function adicionarVitoria(i){
-    let gamer = gamers[i]
-    gamer.vitorias++
-    gamer.pontos = calculaPontos(gamer)
-    exibeJogadoresNaTela(gamers)
+    let gamer = gamers[i];
+    gamer.victories++;
+    gamer.scores = calculaPontos(gamer);
+    exibeJogadoresNaTela(gamers);
 }
 
 function adicionarEmpate(i){
-    let gamer = gamers[i]
-    gamer.empates++
-    gamer.pontos = calculaPontos(gamer)
-    exibeJogadoresNaTela(gamers)
+    let gamer = gamers[i];
+    gamer.draws++;
+    gamer.scores = calculaPontos(gamer);
+    exibeJogadoresNaTela(gamers);
 }
 
 function adicionarDerrota(i){
-    let gamer = gamers[i]
-    gamer.derrotas++
-    gamer.pontos = calculaPontos(gamer)
-    exibeJogadoresNaTela(gamers)
+    let gamer = gamers[i];
+    gamer.defeats++;
+    gamer.scores = calculaPontos(gamer);
+    exibeJogadoresNaTela(gamers);
 }
