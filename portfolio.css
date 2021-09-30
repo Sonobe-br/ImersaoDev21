@@ -164,4 +164,19 @@ a:hover{ /* efeito de troca de cores no momento que o cursor passa sob o link */
 
 }
 
+/* footer {
+	text-align: center;
+	background: url("bg.jpg");
+	padding: 40px 0;
+} */
+
+.Copyright { 
+    position: relative;
+    left: 50px;
+	font-size: 15px;
+	color: #0f0f0f;
+	margin: 20px 0 0;
+    /* text-align: center; */
+}
+
 
