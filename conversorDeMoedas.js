@@ -4,11 +4,11 @@ function Converter() {
     var valorEmRealNumerico = parseInt(valor); 
     //console.log(valorEmDolarNumerico);
     
-    var valorEmReal = valorEmRealNumerico.toFixed(2) / 5.00; /* Cotação do dia 14 de setembro 2021 */
+    var valorEmReal = valorEmRealNumerico.toFixed(2) * 5.38; /* Cotação do dia 2 de outubro 2021 */
     console.log(valorEmReal);
     
     var elementoValorConvertido = document.getElementById('valorConvertido');
-    var valorConvertido = 'O resultado em Real é R$' + valorEmReal;
+    var valorConvertido = 'The result in Real is R$' + valorEmReal;
     elementoValorConvertido.innerHTML = valorConvertido;   
     }
 
@@ -18,10 +18,10 @@ function Converter() {
     let valores = elementoValor.value;
     let valorEmDolarNumerico = parseInt(valores); 
         
-    let valorEmDolar = valorEmDolarNumerico.toFixed(2) * 5.00; /* Cotação do dia 14 de setembro 2021 */
+    let valorEmDolar = valorEmDolarNumerico.toFixed(2) / 5.00; /* Cotação do dia 2 de outubro 2021 */
     console.log(valorEmDolar);
     
     let elementoMoedaConvertida = document.getElementById('trocandoValores');
-    let trocandoValores = 'O resultado em Dolar é US$' + valorEmDolar;
+    let trocandoValores = 'The result in Dollar is US$' + valorEmDolar;
     elementoMoedaConvertida.innerHTML = trocandoValores;   
     }
